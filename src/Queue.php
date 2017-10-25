@@ -20,6 +20,20 @@ class Queue
     protected $num = 30;
 
     /**
+     * 设置数据
+     *
+     * @param $data
+     *
+     * @return $this
+     */
+    public function data($data)
+    {
+        $this->data = $data;
+
+        return $this;
+    }
+
+    /**
      * 队列数量
      *
      * @param $num
